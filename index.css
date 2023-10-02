@@ -86,7 +86,7 @@ a {
   transition: all 0.3s ease-in-out;
 }
 .main_menu.active {
-  height: 100vh;
+  height: 20rem;
 }
 .main_menu ul {
   margin: 0;
@@ -99,11 +99,12 @@ a {
 .main_menu ul li a {
   display: block;
   text-decoration: none;
+  text-align: right;
   padding: 10px;
   font-size: 25px;
   border-bottom: 1px solid #ff2e2e;
   color: #000;
-  background-image: linear-gradient(to right, #ff2e2e 100%, #fff);
+  background-image: linear-gradient(to left, #ff2e2e 100%, #fff);
   background-size: 0%;
   background-repeat: no-repeat;
 }
@@ -124,6 +125,15 @@ a {
 }
 .main_menu.active .menu_bg {
   transform: scale(120);
+}
+
+@media screen and (max-width: 356px) {
+  .logoSmall,
+  .logo,
+  .logoImage {
+    width: 3rem;
+    height: 2rem;
+  }
 }
 
 /*Banner*/
