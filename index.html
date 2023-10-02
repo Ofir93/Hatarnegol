@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
 </head>
 
@@ -153,372 +154,398 @@
     <section id="services" class="services-section">
         <div class="container text-center">
             <h2><span>תפריט</span></h2>
-            <h3><span>בקטנה</span></h3>
-            <div class="row">
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="service-box">
-                        <figure>
-                            <img src="./lib/box/friedMix.jpeg" />
-                        </figure>
-                        <h3>מיקס מטוגנים</h3>
-                        <p>שניצלונים, טבעות בצל, צ'יפס וכדורי פלאפל. <br> מוגש עם 4 רטבים לבחירה.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="service-box">
-                        <figure>
-                            <img src="./lib/box/shnitzelFries.jpeg" />
-                        </figure>
-                        <h3>שניצלונים וצ'יפס</h3>
-                        <p>שניצלים 6 יח' וציפס. <br> מוגש עם שתיה ו3 רטבים לבחירה.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="service-box">
-                        <figure>
-                            <img src="./lib/side/miniWeaners.jpeg" />
-                        </figure>
-                        <h3>נקניקיות נשנוש</h3>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="service-box">
-                        <figure>
-                            <img src="./lib/side/fraise.jpeg" />
-                        </figure>
-                        <h3>צ'יפס</h3>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="service-box">
-                        <figure>
-                            <img src="./lib/side/onionRings.jpeg" />
-                        </figure>
-                        <h3>טבעות בצל</h3>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="service-box">
-                        <figure>
-                            <img src="./lib/side/falafelSmall.jpeg" />
-                        </figure>
-                        <h3>פלאפל</h3>
-                        <p>פלאפל רמי, מותג בן 18 שנים!</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="service-box">
-                        <figure>
-                            <img src="./lib/side/chickenSmall.jpeg" />
-                        </figure>
-                        <h3>שניצלונים</h3>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="service-box">
-                        <figure>
-                            <img src="./lib/salatim/s'hoogGreen.png" />
-                        </figure>
-                        <h3>סלט ירוק קטן</h3>
-                        <p>מוגש עם רוטב אלף האיים ורוטב שום</p>
-                    </div>
-                </div>
+            <div id="mainMenu">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="service-box popup" onclick="smallMenuT()">
+                            <h3><span>בקטנה</span></h3>
+                            <figure>
+                                <img src="./lib/box/friedMix.jpeg" />
+                            </figure>
+                            <span class="popuptext">
 
-            </div>
-            <h3><span>בורגרים\בבאגט</span></h3>
-            <p> .כל המנות מגיעות בלחם בורגר או בבאגט עם סלטים וממרחים לבחירה. מוגש עם צ׳יפס, רטבים ושתייה
-            </p>
-            <div class="row">
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="service-box">
-                        <figure>
-                            <img src="./lib/dishes/hamburger.jpeg" />
-                        </figure>
-                        <h3>בורגר הבית</h3>
-                        <p>לחמנית המבורגר או בבאגט 100 גרם</p>
+                            </span>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="service-box">
-                        <figure>
-                            <img src="./lib/dishes/dubbleBurger.jpeg" />
-                        </figure>
-                        <h3>בורגר כפול</h3>
-                        <p>לחמנית המבורגר או בבאגט 200 גרם</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="service-box">
-                        <figure>
-                            <img src="./lib/dishes/chickenWiners.jpeg" />
-                        </figure>
-                        <h3>נקניקיות ג'מבו</h3>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="service-box">
-                        <figure>
-                            <img src="./lib/dishes/hazeOf.jpeg" />
-                        </figure>
-                        <h3>חזה עוף במרינדה</h3>
-                        <p>קצוץ ועוקצני</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="service-box">
-                        <figure>
-                            <img src="./lib/dishes/meoravMarmoreqi.jpeg" />
-                        </figure>
-                        <h3>מעורב מרמורקי</h3>
-                        <p>עם רוטב הבית</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="service-box">
-                        <figure>
-                            <img src="./lib/dishes/shnitzel.jpeg" />
-                        </figure>
-                        <h3>שניצל ביסלי</h3>
-                        <p>ביתי ומיוחד</p>
-                    </div>
-                </div>
-            </div>
-            <h3><span>בצלחת</span></h3>
-            <p>כל המנות בצלחת מגיעות עם סלט ירקות (עגבניה, מלפפון), חומוס, טחינה, סלט כרוב לבן, מלפפון חמוץ, פיתה, שתייה
-                ותוספת לבחירה
-            </p>
-            <div class="row">
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="service-box">
-                        <figure>
-                            <img src="./lib/dishes/plate/chickenPalte.jpeg" />
-                        </figure>
-                        <h3>חזה עוף קצוץ</h3>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="service-box">
-                        <figure>
-                            <img src="./lib/dishes/plate/meoravPlate2.jpeg" />
-                        </figure>
-                        <h3>מעורב מרמורקי</h3>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="service-box">
-                        <figure>
-                            <img src="./lib/dishes/plate/planchaMix.jpeg" />
-                        </figure>
-                        <h3>מיקס פלאנצ'ה</h3>
-                        <p>מרגז וקבב</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="service-box">
-                        <figure>
-                            <img src="./lib/dishes/plate/shnitzelPlate.jpeg" />
-                        </figure>
-                        <h3>שניצל הבית</h3>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="service-box">
-                        <figure>
-                            <img src="./lib/dishes/plate/winerPlate.jpeg" />
-                        </figure>
-                        <h3>נקניקיות ג'אמבו</h3>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="service-box">
-                        <figure>
-                            <img src="./lib/tasbihMeforaq.jpeg" />
-                        </figure>
-                        <h3>תסביך הדגל</h3>
-                        <p>סביך מפורק עם פלאפל הבית</p>
-                    </div>
-                </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="service-box popup" onclick="burgerMenuT()">
+                            <h3><span>בורגרים\בבאגט</span></h3>
+                            <figure>
+                                <img src="./lib/dishes/meoravMarmoreqi.jpeg" />
+                            </figure>
+                            <span class="popuptext"> .כל המנות מגיעות בלחם בורגר או בבאגט עם סלטים וממרחים
+                                לבחירה. מוגש עם צ׳יפס, רטבים ושתייה
+                            </span>
 
-            </div>
-            <h3><span>ארוחות</span></h3>
-            <div class="row">
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="service-box">
-                        <figure>
-                            <img src="./lib/dishes/hamburger.jpeg" />
-                        </figure>
-                        <h3>ארוחת קומבינציה לארבעה אנשים</h3>
-                        <p>2 נקניקיות ג׳מבו בבגט, 2 המבורגרים 100 גרם בלחמניה, צ׳יפס גדול, 6 יח׳ טבעות בצל ו4 שתיה
-                            לבחירה</p>
+                        </div>
                     </div>
-                </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="service-box popup" onclick="plateMenuT()">
+                            <h3><span>בצלחת</span></h3>
+                            <figure>
+                                <img src="./lib/dishes/plate/meoravPlate2.jpeg" />
+                            </figure>
+                            <span class="popuptext">כל המנות בצלחת מגיעות עם סלט ירקות (עגבניה, מלפפון),
+                                חומוס, טחינה, סלט כרוב לבן, מלפפון חמוץ,
+                                פיתה,
+                                שתייה
+                                ותוספת לבחירה
+                            </span>
 
-            </div>
-            <h3><span>שתיה</span></h3>
-            <p>קיים עוד מגוון שתיה מתחלף במקום</p>
-            <div class="row">
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="service-box">
-                        <figure>
-                            <img src="./lib/drinks/cola.jpeg" />
-                        </figure>
-                        <h3>קולה</h3>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="service-box">
-                        <figure>
-                            <img src="./lib/drinks/fanta.jpeg" />
-                        </figure>
-                        <h3>פאנטה</h3>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="service-box">
-                        <figure>
-                            <img src="./lib/drinks/rootBeer.jpeg" />
-                        </figure>
-                        <h3>בירה שחורה</h3>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="service-box">
-                        <figure>
-                            <img src="./lib/drinks/sprite.jpeg" />
-                        </figure>
-                        <h3>ספרייט</h3>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="service-box">
-                        <figure>
-                            <img src="./lib/drinks/soda.jpeg" />
-                        </figure>
-                        <h3>סודה</h3>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="service-box">
-                        <figure>
-                            <img src="./lib/drinks/waterNevi.jpeg" />
-                        </figure>
-                        <h3>מים מינרלים</h3>
-                    </div>
-                </div>
-            </div>
-            <h3><span>אלכוהול</span></h3>
-            <div class="row">
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="service-box">
-                        <figure>
-                            <img src="./lib/drinks/goldStar.jpeg" />
-                        </figure>
-                        <h3>גולדסטאר 5%</h3>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="service-box">
-                        <figure>
-                            <img src="" />
-                        </figure>
-                        <h3>Service Menu Two</h3>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="service-box">
-                        <figure>
-                            <img
-                                src="https://images.pexels.com/photos/1487511/pexels-photo-1487511.jpeg?cs=srgb&dl=pexels-engin-akyurt-1487511.jpg&fm=jpg" />
-                        </figure>
-                        <h3>Service Menu Three</h3>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="service-box">
-                        <figure>
-                            <img
-                                src="https://images.pexels.com/photos/1487511/pexels-photo-1487511.jpeg?cs=srgb&dl=pexels-engin-akyurt-1487511.jpg&fm=jpg" />
-                        </figure>
-                        <h3>Service Menu Three</h3>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="service-box">
-                        <figure>
-                            <img
-                                src="https://images.pexels.com/photos/1527603/pexels-photo-1527603.jpeg?cs=srgb&dl=pexels-engin-akyurt-1527603.jpg&fm=jpg" />
-                        </figure>
-                        <h3>Service Menu One</h3>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="service-box">
-                        <figure>
-                            <img
-                                src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?cs=srgb&dl=pexels-lisa-fotios-1279330.jpg&fm=jpg" />
-                        </figure>
-                        <h3>Service Menu Two</h3>
-                    </div>
-                </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="service-box popup" onclick="mealMenuT()">
+                            <h3><span>ארוחות</span></h3>
+                            <figure>
+                                <img src="./lib/dishes/hamburger.jpeg" />
+                            </figure>
+                            <span class="popuptext">
 
-            </div>
-            <h3><span>בקטנה</span></h3>
-            <div class="row">
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="service-box">
-                        <figure>
-                            <img
-                                src="https://images.pexels.com/photos/1527603/pexels-photo-1527603.jpeg?cs=srgb&dl=pexels-engin-akyurt-1527603.jpg&fm=jpg" />
-                        </figure>
-                        <h3>Service Menu One</h3>
+                            </span>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="service-box">
-                        <figure>
-                            <img
-                                src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?cs=srgb&dl=pexels-lisa-fotios-1279330.jpg&fm=jpg" />
-                        </figure>
-                        <h3>Service Menu Two</h3>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="service-box popup" onclick="drinkMenuT()">
+                            <h3><span>שתיה</span></h3>
+                            <figure>
+                                <img src="./lib/drinks/soda.jpeg" />
+                            </figure>
+                            <span class="popuptext">
+                                קיים עוד מגוון שתיה מתחלף במקום
+                            </span>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="service-box">
-                        <figure>
-                            <img
-                                src="https://images.pexels.com/photos/1487511/pexels-photo-1487511.jpeg?cs=srgb&dl=pexels-engin-akyurt-1487511.jpg&fm=jpg" />
-                        </figure>
-                        <h3>Service Menu Three</h3>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="service-box">
-                        <figure>
-                            <img
-                                src="https://images.pexels.com/photos/1487511/pexels-photo-1487511.jpeg?cs=srgb&dl=pexels-engin-akyurt-1487511.jpg&fm=jpg" />
-                        </figure>
-                        <h3>Service Menu Three</h3>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="service-box">
-                        <figure>
-                            <img
-                                src="https://images.pexels.com/photos/1527603/pexels-photo-1527603.jpeg?cs=srgb&dl=pexels-engin-akyurt-1527603.jpg&fm=jpg" />
-                        </figure>
-                        <h3>Service Menu One</h3>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12">
-                    <div class="service-box">
-                        <figure>
-                            <img
-                                src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?cs=srgb&dl=pexels-lisa-fotios-1279330.jpg&fm=jpg" />
-                        </figure>
-                        <h3>Service Menu Two</h3>
-                    </div>
-                </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="service-box popup" onclick="alcoholMenuT()">
+                            <h3><span>אלכוהול</span></h3>
+                            <figure>
+                                <img src="./lib/drinks/goldStar.jpeg" />
+                            </figure>
+                            <span class="popuptext">
 
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="service-box popup" onclick="marketMenuT()">
+                            <h3><span>שוק אורגני</span></h3>
+                            <figure>
+                                <img src="./lib/salatim/taarovetFala.png" />
+                            </figure>
+                            <span class="popuptext">
+
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="smallMenu">
+                <button type="button" class="btn btn-outline-danger" onclick="backToggle()">חזור לתפריט <i
+                        class="bi bi-caret-left-square-fill"></i></button>
+                <h3><span>בקטנה</span></h3>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="service-box">
+                            <figure>
+                                <img src="./lib/box/friedMix.jpeg" />
+                            </figure>
+                            <h3>מיקס מטוגנים</h3>
+                            <p>שניצלונים, טבעות בצל, צ'יפס וכדורי פלאפל. <br> מוגש עם 4 רטבים לבחירה.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="service-box">
+                            <figure>
+                                <img src="./lib/box/shnitzelFries.jpeg" />
+                            </figure>
+                            <h3>שניצלונים וצ'יפס</h3>
+                            <p>שניצלים 6 יח' וציפס. <br> מוגש עם שתיה ו3 רטבים לבחירה.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="service-box">
+                            <figure>
+                                <img src="./lib/side/miniWeaners.jpeg" />
+                            </figure>
+                            <h3>נקניקיות נשנוש</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="service-box">
+                            <figure>
+                                <img src="./lib/side/fraise.jpeg" />
+                            </figure>
+                            <h3>צ'יפס</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="service-box">
+                            <figure>
+                                <img src="./lib/side/onionRings.jpeg" />
+                            </figure>
+                            <h3>טבעות בצל</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="service-box">
+                            <figure>
+                                <img src="./lib/side/falafelSmall.jpeg" />
+                            </figure>
+                            <h3>פלאפל</h3>
+                            <p>פלאפל רמי, מותג בן 18 שנים!</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="service-box">
+                            <figure>
+                                <img src="./lib/side/chickenSmall.jpeg" />
+                            </figure>
+                            <h3>שניצלונים</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="service-box">
+                            <figure>
+                                <img src="./lib/salatim/s'hoogGreen.png" />
+                            </figure>
+                            <h3>סלט ירוק קטן</h3>
+                            <p>מוגש עם רוטב אלף האיים ורוטב שום</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="burgerMenu">
+                <button type="button" class="btn btn-outline-danger" onclick="backToggle()">חזור לתפריט <i
+                        class="bi bi-caret-left-square-fill"></i></button>
+                <h3><span>בורגרים\בבאגט</span></h3>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="service-box">
+                            <figure>
+                                <img src="./lib/dishes/hamburger.jpeg" />
+                            </figure>
+                            <h3>בורגר הבית</h3>
+                            <p>לחמנית המבורגר או בבאגט 100 גרם</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="service-box">
+                            <figure>
+                                <img src="./lib/dishes/dubbleBurger.jpeg" />
+                            </figure>
+                            <h3>בורגר כפול</h3>
+                            <p>לחמנית המבורגר או בבאגט 200 גרם</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="service-box">
+                            <figure>
+                                <img src="./lib/dishes/chickenWiners.jpeg" />
+                            </figure>
+                            <h3>נקניקיות ג'מבו</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="service-box">
+                            <figure>
+                                <img src="./lib/dishes/hazeOf.jpeg" />
+                            </figure>
+                            <h3>חזה עוף במרינדה</h3>
+                            <p>קצוץ ועוקצני</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="service-box">
+                            <figure>
+                                <img src="./lib/dishes/meoravMarmoreqi.jpeg" />
+                            </figure>
+                            <h3>מעורב מרמורקי</h3>
+                            <p>עם רוטב הבית</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="service-box">
+                            <figure>
+                                <img src="./lib/dishes/shnitzel.jpeg" />
+                            </figure>
+                            <h3>שניצל ביסלי</h3>
+                            <p>ביתי ומיוחד</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="plateMenu">
+                <button type="button" class="btn btn-outline-danger" onclick="backToggle()">חזור לתפריט <i
+                        class="bi bi-caret-left-square-fill"></i></button>
+                <h3><span>בצלחת</span></h3>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="service-box">
+                            <figure>
+                                <img src="./lib/dishes/plate/chickenPalte.jpeg" />
+                            </figure>
+                            <h3>חזה עוף קצוץ</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="service-box">
+                            <figure>
+                                <img src="./lib/dishes/plate/meoravPlate2.jpeg" />
+                            </figure>
+                            <h3>מעורב מרמורקי</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="service-box">
+                            <figure>
+                                <img src="./lib/dishes/plate/planchaMix.jpeg" />
+                            </figure>
+                            <h3>מיקס פלאנצ'ה</h3>
+                            <p>מרגז וקבב</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="service-box">
+                            <figure>
+                                <img src="./lib/dishes/plate/shnitzelPlate.jpeg" />
+                            </figure>
+                            <h3>שניצל הבית</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="service-box">
+                            <figure>
+                                <img src="./lib/dishes/plate/winerPlate.jpeg" />
+                            </figure>
+                            <h3>נקניקיות ג'אמבו</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="service-box">
+                            <figure>
+                                <img src="./lib/tasbihMeforaq.jpeg" />
+                            </figure>
+                            <h3>תסביך הדגל</h3>
+                            <p>סביך מפורק עם פלאפל הבית</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="mealMenu">
+                <button type="button" class="btn btn-outline-danger" onclick="backToggle()">חזור לתפריט <i
+                        class="bi bi-caret-left-square-fill"></i></button>
+                <h3><span>ארוחות</span></h3>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="service-box">
+                            <figure>
+                                <img src="./lib/dishes/hamburger.jpeg" />
+                            </figure>
+                            <h3>ארוחת קומבינציה לארבעה אנשים</h3>
+                            <p>2 נקניקיות ג׳מבו בבגט, 2 המבורגרים 100 גרם בלחמניה, צ׳יפס גדול, 6 יח׳ טבעות בצל ו4 שתיה
+                                לבחירה</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="drinkMenu">
+                <button type="button" class="btn btn-outline-danger" onclick="backToggle()">חזור לתפריט <i
+                        class="bi bi-caret-left-square-fill"></i></button>
+                <h3><span>שתיה</span></h3>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="service-box">
+                            <figure>
+                                <img src="./lib/drinks/cola.jpeg" />
+                            </figure>
+                            <h3>קולה</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="service-box">
+                            <figure>
+                                <img src="./lib/drinks/fanta.jpeg" />
+                            </figure>
+                            <h3>פאנטה</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="service-box">
+                            <figure>
+                                <img src="./lib/drinks/rootBeer.jpeg" />
+                            </figure>
+                            <h3>בירה שחורה</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="service-box">
+                            <figure>
+                                <img src="./lib/drinks/sprite.jpeg" />
+                            </figure>
+                            <h3>ספרייט</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="service-box">
+                            <figure>
+                                <img src="./lib/drinks/soda.jpeg" />
+                            </figure>
+                            <h3>סודה</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="service-box">
+                            <figure>
+                                <img src="./lib/drinks/waterNevi.jpeg" />
+                            </figure>
+                            <h3>מים מינרלים</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="alcoholMenu">
+                <button type="button" class="btn btn-outline-danger" onclick="backToggle()">חזור לתפריט <i
+                        class="bi bi-caret-left-square-fill"></i></button>
+                <h3><span>אלכוהול</span></h3>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="service-box">
+                            <figure>
+                                <img src="./lib/drinks/goldStar.jpeg" />
+                            </figure>
+                            <h3>גולדסטאר 5%</h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="marketMenu">
+                <button type="button" class="btn btn-outline-danger" onclick="backToggle()">חזור לתפריט <i
+                        class="bi bi-caret-left-square-fill"></i></button>
+                <h3><span>שוק אורגני</span></h3>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="service-box">
+                            <figure>
+                                <img src="./lib/drinks/goldStar.jpeg" />
+                            </figure>
+                            <h3>גולדסטאר 5%</h3>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </section>

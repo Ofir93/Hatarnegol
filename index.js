@@ -20,3 +20,51 @@ menuList.forEach(function (navElement) {
     }
   })
 })
+
+const smallMenuT = () => {
+  mainMenu.classList.add('hides')
+  smallMenu.classList.add('shows')
+}
+
+const burgerMenuT = () => {
+  mainMenu.classList.add('hides')
+  burgerMenu.classList.add('shows')
+}
+
+const plateMenuT = () => {
+  mainMenu.classList.add('hides')
+  plateMenu.classList.add('shows')
+}
+
+const mealMenuT = () => {
+  mainMenu.classList.add('hides')
+  mealMenu.classList.add('shows')
+}
+
+const drinkMenuT = () => {
+  mainMenu.classList.add('hides')
+  drinkMenu.classList.add('shows')
+}
+
+const alcoholMenuT = () => {
+  mainMenu.classList.add('hides')
+  alcoholMenu.classList.add('shows')
+}
+
+const marketMenuT = () => {
+  mainMenu.classList.add('hides')
+  marketMenu.classList.add('shows')
+}
+
+const backToggle = () => {
+  console.log('object')
+  smallMenu.classList.remove('shows')
+  marketMenu.classList.remove('shows')
+  alcoholMenu.classList.remove('shows')
+  drinkMenu.classList.remove('shows')
+  mealMenu.classList.remove('shows')
+  plateMenu.classList.remove('shows')
+  burgerMenu.classList.remove('shows')
+  mainMenu.classList.remove('hides')
+  // mainMenu.classList.replace('hides', 'shows')
+}

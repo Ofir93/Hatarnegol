@@ -181,6 +181,7 @@ h2.left span {
 .services-section {
   padding: 100px 0 40px;
   background: #ece8e8;
+  position: relative;
 }
 .services-section h3 {
   text-align: right;
@@ -227,6 +228,113 @@ input[type='submit'] {
 }
 input[type='submit']:hover {
   background: #d01212;
+}
+
+/* menu in and out animation */
+
+#mainMenu.hides,
+#smallMenu,
+#burgerMenu,
+#plateMenu,
+#mealMenu,
+#drinkMenu,
+#alcoholMenu,
+#marketMenu {
+  animation-name: moveOut;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+#mainMenu {
+  animation-name: moveIn;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+#smallMenu.shows,
+#burgerMenu.shows,
+#plateMenu.shows,
+#mealMenu.shows,
+#drinkMenu.shows,
+#alcoholMenu.shows,
+#marketMenu.shows {
+  border-radius: 25px;
+  padding: 2%;
+  background-color: #b6ee32;
+  animation-name: moveIn;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveOut {
+  0% {
+    transform: translateX(0);
+    display: block;
+    z-index: 1;
+  }
+  50% {
+    transform: translateX(-100%);
+    opacity: 0;
+    z-index: 1;
+  }
+  50.001% {
+    /* opacity: 0;
+    transform: translateX(100vw); */
+    display: none;
+  }
+  50.002% {
+    /* opacity: 1;
+    transform: translateX(100vw); */
+    display: none;
+  }
+  100% {
+    /* transform: translateX(0); */
+    display: none;
+  }
+}
+
+@keyframes moveIn {
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+    display: none;
+
+    z-index: -1;
+  }
+  50% {
+    transform: translateX(-100%);
+    opacity: 0;
+    z-index: -1;
+    display: none;
+  }
+  50.001% {
+    display: none;
+    z-index: -1;
+    /* opacity: 0;
+    transform: translateX(100vw); */
+  }
+  50.002% {
+    display: block;
+    z-index: 1;
+
+    /* opacity: 1;
+    transform: translateX(100vw); */
+  }
+  100% {
+    /* transform: translateX(0); */
+    z-index: 1;
+
+    display: block;
+  }
+}
+
+/* section button */
+.btn-outline-danger {
+  position: absolute;
+  left: 2%;
+  /* border-radius: 50%; */
 }
 
 /*footer*/
@@ -299,5 +407,72 @@ input[type='submit']:hover {
   }
   .services-section {
     padding: 60px 0 20px;
+  }
+}
+
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup:hover > .popuptext {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
