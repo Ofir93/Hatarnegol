@@ -68,3 +68,9 @@ const backToggle = () => {
   mainMenu.classList.remove('hides')
   // mainMenu.classList.replace('hides', 'shows')
 }
+
+// $("button").click(function() {
+//   $('html,body').animate({
+//       scrollTop: $(".second").offset().top},
+//       'slow');
+// });
