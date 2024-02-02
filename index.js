@@ -3,7 +3,6 @@ main_menu = document.getElementById('main_menu')
 menuList = document.querySelectorAll('.main_menu ul li a')
 current = 1
 nav_icon.addEventListener('click', function () {
-  console.log('click')
   if (current == 1) {
     main_menu.classList.add('active')
     current = 2
@@ -66,11 +65,17 @@ const backToggle = () => {
   plateMenu.classList.remove('shows')
   burgerMenu.classList.remove('shows')
   mainMenu.classList.remove('hides')
-  // mainMenu.classList.replace('hides', 'shows')
 }
 
-// $("button").click(function() {
-//   $('html,body').animate({
-//       scrollTop: $(".second").offset().top},
-//       'slow');
-// });
+const t = (e) => {
+  e.preventDefault()
+
+  console.log(
+    Array.from(document.querySelectorAll('#contactForm input')).reduce(
+      (acc, input) => ({ ...acc, [input.name]: input.value }),
+      {}
+    )
+  )
+  document.getElementById('contactForm').submit()
+}
+document.getElementById('submitForm').addEventListener('click', t)

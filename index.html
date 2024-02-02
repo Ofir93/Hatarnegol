@@ -576,25 +576,27 @@
     <section id="contact" class="contact_us-section">
         <div class="container">
             <h2><span>צור קשר</span></h2>
-            <form>
+            <!-- <form id="contactForm" action="#home"> -->
+            <form id="contactForm" action="#home" onsubmit="t()">
                 <div class="row">
                     <div class="col-md-6">
-                        <input type="text" name="" placeholder="First Name" />
+                        <input type="text" name="name" placeholder="שם פרטי" required />
                     </div>
                     <div class="col-md-6">
-                        <input type="text" name="" placeholder="Last Name" />
+                        <input type="text" name="lastName" placeholder="שם משפחה" required />
                     </div>
                     <div class="col-md-6">
-                        <input type="text" name="" placeholder="Email" />
+                        <input type="text" name="email" placeholder="אימייל" required />
                     </div>
                     <div class="col-md-6">
-                        <input type="text" name="" placeholder="Phone" />
+                        <input type="text" name="tel" placeholder="טלפון" />
                     </div>
                     <div class="col-md-12">
-                        <textarea placeholder="Message"></textarea>
+                        <textarea placeholder="תוכן הפנייה"></textarea>
                     </div>
                     <div class="col-md-12 text-center">
-                        <input type="submit" name="" value="Submit" />
+                        <input type="submit" name="" value="שלח טופס" />
+                        <!-- <button type="button" class="btn btn-lg btn-danger" id="submitForm">שלח</button> -->
                     </div>
                 </div>
             </form>
