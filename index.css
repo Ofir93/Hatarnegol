@@ -139,7 +139,7 @@ a {
 /*Banner*/
 .banner {
   min-height: 100vh;
-  background-image: url('./lib/tasbihMeforaq.jpeg');
+  background-image: url("./lib/tasbihMeforaq.jpeg");
   background-size: cover;
   background-position: center center;
   background-color: rgba(0, 0, 0, 0.5);
@@ -227,7 +227,7 @@ textarea {
 textarea {
   height: 150px;
 }
-input[type='submit'] {
+input[type="submit"] {
   width: 150px;
   border: 0px;
   background: #ff2e2e;
@@ -237,7 +237,7 @@ input[type='submit'] {
   margin-bottom: 0;
   cursor: pointer;
 }
-input[type='submit']:hover {
+input[type="submit"]:hover {
   background: #d01212;
 }
 
@@ -422,6 +422,10 @@ input[type='submit']:hover {
   .services-section {
     padding: 60px 0 20px;
   }
+
+  .floating-container {
+    margin-right: 0;
+  }
 }
 
 /* Popup container - can be anything you want */
@@ -453,7 +457,7 @@ input[type='submit']:hover {
 
 /* Popup arrow */
 .popup .popuptext::after {
-  content: '';
+  content: "";
   position: absolute;
   top: -10px;
   left: 50%;
@@ -489,4 +493,49 @@ input[type='submit']:hover {
   to {
     opacity: 1;
   }
+}
+
+.floating-container {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  bottom: 0;
+  right: 0;
+  margin: 35px 25px;
+  z-index: 999;
+}
+.floating-container:hover .floating-button {
+  box-shadow: 0 10px 25px rgba(44, 179, 240, 0.6);
+  -webkit-transform: translatey(5px);
+  transform: translatey(5px);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.floating-container .floating-button {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  background: #2cb3f0;
+  bottom: 0;
+  border-radius: 50%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: white;
+  line-height: 65px;
+  text-align: center;
+  font-size: 23px;
+  z-index: 100;
+  box-shadow: 0 10px 25px -5px rgba(44, 179, 240, 0.6);
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+
+@media screen and (max-width: 767px) {
+  .floating-container {
+    margin-right: 0;
+  }
+
 }
