@@ -36,20 +36,20 @@ const plateMenuT = () => {
   plateMenu.classList.add('shows')
 }
 
-const mealMenuT = () => {
-  mainMenu.classList.add('hides')
-  mealMenu.classList.add('shows')
-}
+// const mealMenuT = () => {
+//   mainMenu.classList.add('hides')
+//   mealMenu.classList.add('shows')
+// }
 
 const drinkMenuT = () => {
   mainMenu.classList.add('hides')
   drinkMenu.classList.add('shows')
 }
 
-const alcoholMenuT = () => {
-  mainMenu.classList.add('hides')
-  alcoholMenu.classList.add('shows')
-}
+// const alcoholMenuT = () => {
+//   mainMenu.classList.add('hides')
+//   alcoholMenu.classList.add('shows')
+// }
 
 const marketMenuT = () => {
   mainMenu.classList.add('hides')
@@ -57,12 +57,12 @@ const marketMenuT = () => {
 }
 
 const backToggle = () => {
-  console.log('object')
+  // console.log('object')
   smallMenu.classList.remove('shows')
   marketMenu.classList.remove('shows')
-  alcoholMenu.classList.remove('shows')
+  // alcoholMenu.classList.remove('shows')
   drinkMenu.classList.remove('shows')
-  mealMenu.classList.remove('shows')
+  // mealMenu.classList.remove('shows')
   plateMenu.classList.remove('shows')
   burgerMenu.classList.remove('shows')
   mainMenu.classList.remove('hides')
