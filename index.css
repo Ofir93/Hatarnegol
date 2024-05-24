@@ -196,6 +196,7 @@ h2.left span {
 }
 .services-section h3 {
   text-align: right;
+  /* padding-right: 4px; */
 }
 .services-section span {
   border-bottom: 2px solid #ff2e2e;
@@ -205,6 +206,16 @@ h2.left span {
 .service-box {
   margin-bottom: 40px;
   height: calc(100% - 40px);
+
+}
+
+figure {
+  background: #ece8e8;
+
+}
+
+.service-box img {
+  max-height: 12vw;
 }
 
 /*Contact Us Section*/
@@ -422,7 +433,14 @@ input[type="submit"]:hover {
   .services-section {
     padding: 60px 0 20px;
   }
-
+  .service-box img {
+    max-height: 22vw;
+  }  
+  .services-section span {
+    /* padding: 0 0 5px; */
+    /* width: 19rem; */
+  }
+  
   .floating-container {
     margin-right: 0;
   }
@@ -537,5 +555,11 @@ input[type="submit"]:hover {
   .floating-container {
     margin-right: 0;
   }
+
+}
+@media screen and (max-width: 400px) {
+  .service-box img {
+    max-height: 50vw;
+  }  
 
 }
