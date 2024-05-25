@@ -206,12 +206,10 @@ h2.left span {
 .service-box {
   margin-bottom: 40px;
   height: calc(100% - 40px);
-
 }
 
 figure {
   background: #ece8e8;
-
 }
 
 .service-box img {
@@ -251,9 +249,9 @@ input[type="button"] {
 input[type="button"]:hover {
   background: #d01212;
 }
- input[type="tel"]::placeholder{
+input[type="tel"]::placeholder {
   text-align: right;
- }
+}
 /* menu in and out animation */
 
 #mainMenu.hides,
@@ -361,6 +359,27 @@ input[type="button"]:hover {
   /* border-radius: 50%; */
 }
 
+.btn-outline-success {
+  position: absolute;
+  left: 0.5%;
+  width: 2rem;
+  height: 1rem;
+}
+.bi-caret-down-fill {
+  position: absolute;
+  left: 7%;
+  top: 3.8%;
+  transition: transform .3s;
+
+}
+
+/* .hover-rotate{
+  transition: transform .3s;
+} */
+.hover-rotate:hover{
+  .bi-caret-down-fill {transform: rotate(90deg)}; 
+}
+
 /*footer*/
 .footer {
   padding: 10px 30px;
@@ -437,8 +456,8 @@ input[type="button"]:hover {
   }
   .service-box img {
     max-height: 22vw;
-  }  
-  
+  }
+
   .floating-container {
     margin-right: 0;
   }
@@ -548,17 +567,13 @@ input[type="button"]:hover {
   transition: all 0.3s;
 }
 
-
 @media screen and (max-width: 767px) {
   .floating-container {
     margin-right: 0;
   }
-
 }
 @media screen and (max-width: 400px) {
   .service-box img {
     max-height: 50vw;
-  }  
-
+  }
 }
-
